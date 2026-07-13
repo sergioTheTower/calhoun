@@ -1,5 +1,5 @@
-// Package controller will store all the glue logic between models and views.
-package controller
+// Package controllers will store all the glue logic between models and views.
+package controllers
 
 import (
 	"net/http"
