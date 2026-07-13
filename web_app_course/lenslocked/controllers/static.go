@@ -4,7 +4,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/calhoun/web_app_course/app/views"
+	"github.com/sergioTheTower/calhoun/web_app_course/lenslocked/views"
 )
 
 // StaticHandler will return a http.Handlerfunc.
