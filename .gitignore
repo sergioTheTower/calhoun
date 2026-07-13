@@ -1,0 +1,12 @@
+# Compiled Go binaries / build output
+*.exe
+*.test
+*.out
+/web_app_course/fundmentals/cmd/exp/exp
+
+# Sandbox / scratch dirs (not part of the app)
+/web_app_course/fundmentals/
+/web_app_course/templates/
+
+# Editor / OS cruft
+.DS_Store
