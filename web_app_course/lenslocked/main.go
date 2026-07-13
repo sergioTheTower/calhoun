@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/calhoun/web_app_course/app/controllers"
-	"github.com/calhoun/web_app_course/app/views"
 	"github.com/go-chi/chi/v5"
+	"github.com/sergioTheTower/calhoun/web_app_course/lenslocked/controllers"
+	"github.com/sergioTheTower/calhoun/web_app_course/lenslocked/views"
 )
 
 func main() {

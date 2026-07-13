@@ -1,4 +1,4 @@
-module github.com/calhoun/web_app_course
+module github.com/sergioTheTower/calhoun/web_app_course/lenslocked
 
 go 1.26.4
 
