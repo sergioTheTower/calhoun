@@ -8,6 +8,17 @@ import (
 	"net/http"
 )
 
+type Template struct {
+	htmlTpl *template.Template
+}
+
+func Must(t Template, err error) Template {
+	if err != nil {
+		panic(err)
+	}
+	return t
+}
+
 // Parse will take a filepath and try to open up the template.
 func Parse(filepath string) (Template, error) {
 	tpl, err := template.ParseFiles(filepath)
@@ -15,10 +26,6 @@ func Parse(filepath string) (Template, error) {
 		return Template{}, fmt.Errorf("failed to parse template err %w", err)
 	}
 	return Template{htmlTpl: tpl}, nil
-}
-
-type Template struct {
-	htmlTpl *template.Template
 }
 
 // Execute will set the http header and execute the template with the given data.
